@@ -6,25 +6,10 @@ function get_DDHHMMSS( seconds ){
 	var minutes = Math.floor( seconds / 60 ) % 60;
 	var seconds = seconds % 60;
 
-	if( days <= 9 )
-	{
-		days = "0" + days;
-	}
-
-	if( hours <= 9 )
-	{
-		hours = "0" + hours;
-	}
-
-	if( minutes <= 9 )
-	{
-		minutes = "0" + minutes;
-	}
-
-	if( seconds <= 9 )
-	{
-		seconds = "0" + seconds;
-	}
-
+	if( days <= 9 ) { days = "0" + days; }
+	if( hours <= 9 ) { hours = "0" + hours; }
+	if( minutes <= 9 ) { minutes = "0" + minutes; }
+	if( seconds <= 9 ) { seconds = "0" + seconds; }
+	
 	return days + ":" + hours + ":" + minutes;
 }
